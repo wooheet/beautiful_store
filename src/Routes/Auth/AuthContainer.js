@@ -39,9 +39,6 @@ export default () => {
     const onSubmit = async e => {
         e.preventDefault();
         if (action === "logIn") {
-            console.log("logIn")
-            console.log(email)
-
             if (email.value !== "") {
                 try {
                     const {
