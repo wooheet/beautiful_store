@@ -65,6 +65,6 @@ export default () => (
                 <Link href="#">language</Link>
             </ListItem>
         </List>
-        <Copyright>Beautiful Shop {new Date().getFullYear()} &copy;</Copyright>
+        <Copyright>Beautiful Store {new Date().getFullYear()} &copy;</Copyright>
     </Footer>
 );
