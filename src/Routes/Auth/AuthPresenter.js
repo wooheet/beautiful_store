@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 import Input from "../../Components/Input";
@@ -46,11 +47,6 @@ const Form = styled(Box)`
   }
 `;
 
-const MapContents = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-
 export default ({
                     action,
                     username,
@@ -65,7 +61,6 @@ export default ({
         <Form>
             {action === "logIn" && (
                 <form onSubmit={onSubmit}>
-                    <MapContents id="Mymap"></MapContents>
                     <Input placeholder={"Email"} {...email} type="email" />
                     <Button text={"Log in"} />
                 </form>

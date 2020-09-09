@@ -20,9 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56996679-64d0-49f8-8568-2efd02178b46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Auth/AuthContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Auth/AuthContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Auth/AuthPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Auth/AuthPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/KakaoMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/KakaoMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/GlobalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/GlobalStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +84,7 @@
       <updated>1599440441635</updated>
       <workItem from="1599440449072" duration="7703000" />
       <workItem from="1599578529774" duration="4573000" />
+      <workItem from="1599611390642" duration="766000" />
     </task>
     <servers />
   </component>

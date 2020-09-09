@@ -41,6 +41,7 @@ export default () => {
         if (action === "logIn") {
             console.log("logIn")
             console.log(email)
+
             if (email.value !== "") {
                 try {
                     const {
@@ -60,8 +61,6 @@ export default () => {
                 toast.error("Email is required");
             }
         } else if (action === "signUp") {
-            console.log("signUp")
-            console.log(email.value)
             if (
                 email.value !== "" &&
                 username.value !== "" &&
