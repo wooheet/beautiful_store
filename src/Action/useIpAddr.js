@@ -1,20 +1,20 @@
 import Axios from "axios";
 import { useSelector } from "react-redux";
 import { message } from "antd";
-import useMaskData from "./useMaskData";
+import useCVSData from "./useCVSData";
 import useSetMarker from "./kakaomap/useSetMarker";
 
 const { kakao } = window;
 
-var kakaoMap = null;
+let kakaoMap = null;
 
 const useIpAddr = () => {
 
-  const { map } = useSelector(state => ({ map: state.maskMap.map }), []);
+  const { map } = useSelector(state => ({ map: state.cvsMap.map }), []);
 
   kakaoMap = map;
 
-  const { getMaskDataGeo } = useMaskData();
+  const { getCSVDataByGeo } = useCVSData();
   const { setMarker } = useSetMarker();
 
 
@@ -22,7 +22,7 @@ const useIpAddr = () => {
     await Axios.get("https://ipapi.co/json")
       .then((response) => {
         if (kakaoMap !== null) {
-          getMaskDataGeo(response.data.latitude, response.data.longitude, 3000).then(() => {
+          getCSVDataByGeo(response.data.latitude, response.data.longitude, 3000).then(() => {
             setMarker();
           });
           kakaoMap.panTo(new kakao.maps.LatLng(response.data.latitude, response.data.longitude));

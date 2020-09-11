@@ -1,6 +1,7 @@
 import { createStore } from "redux";
 
 const SET_MAP = "setMap";
+const SET_CVS_LIST = "setCvsList";
 const ADD_MARKER = "addMarker";
 
 const setMap = (map) => {
@@ -8,6 +9,13 @@ const setMap = (map) => {
     type: SET_MAP,
     map: map
   }
+};
+
+const setCvsList = (cvsList) => {
+  return {
+    type: SET_CVS_LIST,
+    cvsList: cvsList
+  };
 };
 
 const addMarker = (marker, overlay) => {
@@ -19,31 +27,38 @@ const addMarker = (marker, overlay) => {
 };
 
 const reducer = (state = {
-  maskMap: {
-    map: null,
-    storeList: [],
-    oldMarker: [],
-    oldOverlay: []
-  }
+    cvsMap: {
+      map: null,
+      list: [],
+      oldMarker: [],
+      oldOverlay: []
+    }
 }, action) => {
-  console.log(action);
   switch (action.type) {
 
     case SET_MAP:
       return {
         ...state,
-        maskMap: {
-          ...state.maskMap,
+        cvsMap: {
+          ...state.cvsMap,
           map: action.map
         }
       };
 
-    case ADD_MARKER:
-      console.log("adding... :",action);
+    case SET_CVS_LIST:
       return {
         ...state,
-        maskMap: {
-          ...state.maskMap,
+        cvsMap: {
+          ...state.cvsMap,
+          storeList: action.storeList
+        }
+      };
+
+    case ADD_MARKER:
+      return {
+        ...state,
+        cvsMap: {
+          ...state.cvsMap,
           oldMarker: action.marker,
           oldOverlay: action.overlay
         }
@@ -58,7 +73,8 @@ const store = createStore(reducer);
 
 export const actionCreators = {
   setMap,
-  addMarker
+  addMarker,
+  setCvsList
 };
 
 export default store;

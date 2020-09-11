@@ -1,17 +1,14 @@
 import { useSelector } from "react-redux";
-import useMaskData from "../useMaskData";
 import useSetMarker from "./useSetMarker";
 
 const { kakao } = window;
 
-var kakaoMap = null;
+let kakaoMap = null;
 
 const useCenterChanged = () => {
   const { map } = useSelector(state => ({
-    map: state.maskMap.map
+    map: state.cvsMap.map
   }));
-
-  const { getMaskDataGeo } = useMaskData();
 
   const { setMarker } = useSetMarker();
 
@@ -19,16 +16,13 @@ const useCenterChanged = () => {
 
   const setEvent = () => {
     if (kakaoMap !== null) {
+      console.log("Set Event: center change")
       kakao.maps.event.addListener(kakaoMap, 'dragend', () => {
-
-        // 지도의 중심좌표를 얻어옵니다 
-        var latlng = kakaoMap.getCenter();
-
-        getMaskDataGeo(latlng.getLat(), latlng.getLng(), 3000);
-
+        kakaoMap.getCenter();
         setMarker();
-
       });
+    } else {
+      console.log("Center changed: not found kakao map")
     }
   };
 

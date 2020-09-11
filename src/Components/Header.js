@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
-import { gql } from "apollo-boost";
-import Input from "./Input";
-import useInput from "../Hooks/useInput";
-import { Compass, HeartEmpty, User, Logo } from "./Icons";
-import { useQuery } from "react-apollo-hooks";
+import { Compass } from "./Icons";
 
 const Header = styled.header`
   width: 100%;
@@ -42,41 +38,13 @@ const HeaderColumn = styled.div`
   }
 `;
 
-const SearchInput = styled(Input)`
-  background-color: ${props => props.theme.bgColor};
-  padding: 5px;
-  font-size: 14px;
-  border-radius: 3px;
-  height: auto;
-  text-align: center;
-  width: 70%;
-  &::placeholder {
-    opacity: 0.8;
-    font-weight: 200;
-  }
-`;
-
 const HeaderLink = styled(Link)`
   &:not(:last-child) {
     margin-right: 30px;
   }
 `;
 
-// const ME = gql`
-//     {
-//         me {
-//             username
-//         }
-//     }
-// `;
-
 export default withRouter(({ history }) => {
-    const search = useInput("");
-    // const { data } = useQuery(ME);
-    const onSearchSubmit = e => {
-        e.preventDefault();
-        history.push(`/search?term=${search.value}`);
-    };
     return (
         <Header>
             <HeaderWrapper>
@@ -89,29 +57,9 @@ export default withRouter(({ history }) => {
                     </Link>
                 </HeaderColumn>
                 <HeaderColumn>
-                    <form onSubmit={onSearchSubmit}>
-                        <SearchInput {...search} placeholder="Search" />
-                    </form>
-                </HeaderColumn>
-                <HeaderColumn>
-                    <HeaderLink to="/map">
+                    <HeaderLink to="/">
                         <Compass />
                     </HeaderLink>
-                    <HeaderLink to="/explore">
-                        <Compass />
-                    </HeaderLink>
-                    <HeaderLink to="/notifications">
-                        <HeartEmpty />
-                    </HeaderLink>
-                    {/*{!data.me ? (*/}
-                    {/*    <HeaderLink to="/#">*/}
-                    {/*        <User />*/}
-                    {/*    </HeaderLink>*/}
-                    {/*) : (*/}
-                    {/*    <HeaderLink to={data.me.username}>*/}
-                    {/*        <User />*/}
-                    {/*    </HeaderLink>*/}
-                    {/*)}*/}
                 </HeaderColumn>
             </HeaderWrapper>
         </Header>

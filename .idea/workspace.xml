@@ -20,23 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56996679-64d0-49f8-8568-2efd02178b46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Post/PostContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Post/PostPresenter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Post/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/kakaomap/useCenterChanged.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/kakaomap/useCenterChanged.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/kakaomap/useGeolocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/kakaomap/useGeolocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/kakaomap/useSetMarker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/kakaomap/useSetMarker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/useIpAddr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/useIpAddr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/useMaskData.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apollo/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apollo/Client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Auth/AuthContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Auth/AuthContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/KakaoMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/KakaoMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/EditProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Explore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Feed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/KakaoMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/KakaoMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,15 +71,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/static" />
       <recent name="$PROJECT_DIR$/src/action" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Routes" />
-      <recent name="$PROJECT_DIR$/src/Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -92,6 +95,7 @@
       <workItem from="1599440449072" duration="7703000" />
       <workItem from="1599578529774" duration="4573000" />
       <workItem from="1599611390642" duration="4995000" />
+      <workItem from="1599807342515" duration="45000" />
     </task>
     <servers />
   </component>

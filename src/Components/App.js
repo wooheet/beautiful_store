@@ -10,6 +10,8 @@ import Theme from "../Styles/Theme";
 import Routes from "./Routes";
 import Footer from "./Footer";
 import Header from "./Header";
+import { Provider } from "react-redux";
+import store from "../Store/store";
 
 const QUERY = gql`
     {
@@ -29,20 +31,22 @@ export default () => {
     } = useQuery(QUERY);
 
     return (
-        <ThemeProvider theme={Theme}>
-            <>
-                <GlobalStyles />
-                <Router>
-                    <>
-                        <Header />
-                        <Wrapper>
-                            <Routes isLoggedIn={isLoggedIn} />
-                            <Footer />
-                        </Wrapper>
-                    </>
-                </Router>
-                <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
-            </>
-        </ThemeProvider>
+        <Provider store={store}>
+            <ThemeProvider theme={Theme}>
+                <>
+                    <GlobalStyles />
+                    <Router>
+                        <>
+                            <Header />
+                            <Wrapper>
+                                <Routes isLoggedIn={isLoggedIn} />
+                                <Footer />
+                            </Wrapper>
+                        </>
+                    </Router>
+                    <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
+                </>
+            </ThemeProvider>
+        </Provider >
     );
 };
